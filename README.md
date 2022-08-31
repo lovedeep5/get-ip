@@ -1,8 +1,6 @@
 # get-ip
-Simple API for the user IP only
+Simple API will give you json data back with user IP only.
 https://get-ip-only.herokuapp.com/
-
-Node.js, express used simple api, just giving you back json data on get request.
 
 #how to use the API.
 
