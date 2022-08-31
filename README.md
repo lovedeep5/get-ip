@@ -2,7 +2,7 @@
 Simple API for the user IP only
 https://get-ip-only.herokuapp.com/
 
-Node.js, express used simple api, tracking nothing just giving you back json data on get request.
+Node.js, express used simple api, just giving you back json data on get request.
 
 #how to use the API.
 
