@@ -1,8 +1,8 @@
 var admin = require("firebase-admin");
-// const fs = require("fs");
+const fs = require("fs");
 const configData = require("./firebaseConfigKeys");
 
-// fs.writeFileSync("serviceAccountKey.json", configData, () => {});
+fs.writeFileSync("serviceAccountKey.json", configData, () => {});
 var serviceAccount = require("./serviceAccountKey.json");
 
 admin.initializeApp({
