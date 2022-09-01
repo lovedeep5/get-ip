@@ -18,7 +18,6 @@ app.use(
 
 app.get("/", (req, res) => {
   const ip = requestIp.getClientIp(req);
-
   const host = req.get("host");
   const date = new Date();
   visitorDB.add({ id: uuid(), date, ip, host });
