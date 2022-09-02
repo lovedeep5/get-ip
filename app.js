@@ -20,7 +20,9 @@ app.get("/", (req, res) => {
   const ip = requestIp.getClientIp(req);
   const host = req.get("host");
   const date = new Date();
-  visitorDB.add({ id: uuid(), date, ip, host });
+
+  const remoteAddress = req.socket.remoteAddress;
+  visitorDB.add({ id: uuid(), date, ip, host, remoteAddress });
   res.json({ ip });
 });
 
